@@ -8,3 +8,5 @@ __pycache__/
 *.pt
 *.pth
 *.keras
+.git-backup/
+results/

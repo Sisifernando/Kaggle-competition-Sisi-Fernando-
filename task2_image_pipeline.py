@@ -89,11 +89,13 @@ val_loader = DataLoader(
     val_dataset, batch_size=32, shuffle=False, num_workers=0
 )
 
-# Test one batch
-images, labels = next(iter(train_loader))
 
-print("Training images:", len(train_dataset))
-print("Validation images:", len(val_dataset))
-print("Batch image shape:", images.shape)
-print("Batch label shape:", labels.shape)
-print("Image pipeline working successfully!")
+# Only run this test when executing this file directly
+if __name__ == "__main__":
+    images, labels = next(iter(train_loader))
+
+    print("Training images:", len(train_dataset))
+    print("Validation images:", len(val_dataset))
+    print("Batch image shape:", images.shape)
+    print("Batch label shape:", labels.shape)
+    print("Image pipeline working successfully!")
