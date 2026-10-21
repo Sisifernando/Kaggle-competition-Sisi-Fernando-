@@ -1,0 +1,10 @@
+train/
+test/
+*.zip
+train_labels.csv
+sample_submission.csv
+__pycache__/
+.venv/
+*.pt
+*.pth
+*.keras
